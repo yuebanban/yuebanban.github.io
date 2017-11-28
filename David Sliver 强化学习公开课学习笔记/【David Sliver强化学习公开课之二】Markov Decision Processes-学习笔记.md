@@ -12,7 +12,7 @@
 
 ### 示意图
 
-![MC](fig\MC.png)
+![MC](./fig/MC.png)
 
 ## 2. Markov Reward Processes
 
@@ -47,7 +47,7 @@ $$
 
 ### 示意图
 
-![MRP](fig\MRP.png)
+![MRP](./fig/MRP.png)
 
 ### 贝尔曼方程
 
@@ -55,7 +55,7 @@ $$
 
 根据此图：
 
-![BE_MRP](fig\BE_MRP.png)
+![BE_MRP](./fig/BE_MRP.png)
 
 我们可以有这样的推断：
 $$
@@ -111,7 +111,7 @@ $$
 
 ### 示意图
 
-![MDP](fig\MDP.png)
+![MDP](./fig/MDP.png)
 
 ### 贝尔曼方程
 
@@ -128,26 +128,26 @@ $$
 
 我们还可以描述$v_{\pi}(s)$ 与 $q_{\pi}(s,a)$之间的关系：
 
-![BE_MDP_1](fig\BE_MDP_1.png)
+![BE_MDP_1](./fig/BE_MDP_1.png)
 
 根据上图，有         $v_{\pi}(s) = \sum_{a\in A} \pi(a|s)q_{\pi}(s,a)$
 
-![BE_MDP_2](fig\BE_MDP_2.png)
+![BE_MDP_2](./fig/BE_MDP_2.png)
 
 根据上图，有 $q_{\pi}(s,a) = R_s^a +  \sum_{s^,\in S} P_{ss^,}^a v_{\pi}(s^,)$
 
 将两者的关系式进行带入，有以下两个结果：
 
-![BE_MDP_v](fig\BE_MDP_v.png)
+![BE_MDP_v](./fig/BE_MDP_v.png)
 
-![BE_MDP_Q](fig\BE_MDP_Q.png)
+![BE_MDP_Q](./fig/BE_MDP_Q.png)
 
 #### 2.贝尔曼优化方程
 
 optimal value function：这里的optimal针对的对象是策略$\pi$。 
 
-![BO_MDP_V](fig\BO_MDP_V.png)
+![BO_MDP_V](./fig/BO_MDP_V.png)
 
-![BO_MDP_Q](fig\BO_MDP_Q.png)
+![BO_MDP_Q](./fig/BO_MDP_Q.png)
 
 ## 
